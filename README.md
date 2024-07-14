@@ -5,15 +5,13 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/tschucki/alphavantage-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/tschucki/alphavantage-laravel/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/tschucki/alphavantage-laravel.svg?style=flat-square)](https://packagist.org/packages/tschucki/alphavantage-laravel)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This Laravel package provides an easy way to access the Alphavantage API. With it, you can i.e. fetch historical financial data, including stock prices, forex, and cryptocurrency information. It integrates smoothly with your Laravel application, making it simple to use Alphavantage's services.
 
-## Support us
+```php
+use Tschucki\Alphavantage\Facades\Alphavantage;
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/alphavantage-laravel.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/alphavantage-laravel)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+Alphavantage::timeSeries()->daily('IBM');
+```
 
 ## Installation
 
@@ -21,13 +19,6 @@ You can install the package via composer:
 
 ```bash
 composer require tschucki/alphavantage-laravel
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="alphavantage-laravel-migrations"
-php artisan migrate
 ```
 
 You can publish the config file with:
@@ -40,21 +31,31 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'key' => env('ALPHAVANTAGE_API_KEY'),
 ];
 ```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="alphavantage-laravel-views"
-```
+Pay Alphavantage and get your API key [here](https://www.alphavantage.co/support/#api-key).
 
 ## Usage
 
+I tried to make the package as easy to use as possible. I tried to follow the [Alphavantage](https://www.alphavantage.co/documentation/) API documentation as closely as possible. So if you are familiar with the API, you should feel right at home.
+You have access to the following categories:
+- Core
+- Fundamentals
+- Indicators
+- Intelligence
+
+You can either use the facade access these categories or use the `Alphavantage` class directly.
+
 ```php
-$alphavantage = new Tschucki\Alphavantage();
-echo $alphavantage->echoPhrase('Hello, Tschucki!');
+use Tschucki\Alphavantage;
+
+Alphavantage::timeSeries()->daily('IBM');
 ```
+
+## Documentation
+
+You can find the documentation [here](https://alphavantage-api.marcelwagner.dev/deep-dive/indicators).
 
 ## Testing
 
