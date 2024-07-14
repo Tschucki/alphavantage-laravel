@@ -22,6 +22,7 @@
         "illuminate/contracts": "^10.0||^11.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
         "larastan/larastan": "^2.9",
@@ -35,8 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tschucki\\Alphavantage\\": "src/",
-            "Tschucki\\Alphavantage\\Database\\Factories\\": "database/factories/"
+            "Tschucki\\Alphavantage\\": "src/"
         }
     },
     "autoload-dev": {
