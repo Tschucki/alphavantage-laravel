@@ -7,6 +7,9 @@
 
 This Laravel package provides an easy way to access the Alphavantage API. With it, you can i.e. fetch historical financial data, including stock prices, forex, and cryptocurrency information. It integrates smoothly with your Laravel application, making it simple to use Alphavantage's services.
 
+I created this package for a project I was working on. So it currently only supports the categories I needed. If you need more categories, feel free to open an issue or a pull request.
+I'd love to hear your feedback and suggestions.
+
 ```php
 use Tschucki\Alphavantage\Facades\Alphavantage;
 

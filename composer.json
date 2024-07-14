@@ -7,6 +7,7 @@
         "laravel",
         "alphavantage-laravel"
     ],
+    "version": "0.0.1",
     "homepage": "https://github.com/tschucki/alphavantage-laravel",
     "license": "MIT",
     "authors": [
