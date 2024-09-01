@@ -105,4 +105,26 @@ class Fundamentals
     {
         return $this->get('IPO_CALENDAR', acceptJson: false, acceptCsv: true);
     }
+
+    /**
+     * @throws ApiVolumeReached
+     * @throws ConnectionException
+     */
+    public function dividends(string $symbol): array
+    {
+        return $this->get('DIVIDENDS', [
+            'symbol' => $symbol,
+        ]);
+    }
+
+    /**
+     * @throws ApiVolumeReached
+     * @throws ConnectionException
+     */
+    public function splits(string $symbol): array
+    {
+        return $this->get('SPLITS', [
+            'symbol' => $symbol,
+        ]);
+    }
 }
