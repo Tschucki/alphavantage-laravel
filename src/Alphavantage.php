@@ -12,26 +12,26 @@ class Alphavantage
 {
     public static function fundamentals(): Fundamentals
     {
-        return new Fundamentals();
+        return new Fundamentals;
     }
 
     public static function indicators(): Indicators
     {
-        return new Indicators();
+        return new Indicators;
     }
 
     public static function timeSeries(): TimeSeries
     {
-        return new TimeSeries();
+        return new TimeSeries;
     }
 
     public static function core(): Core
     {
-        return new Core();
+        return new Core;
     }
 
     public static function intelligence(): Intelligence
     {
-        return new Intelligence();
+        return new Intelligence;
     }
 }
