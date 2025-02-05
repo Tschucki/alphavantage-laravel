@@ -43,8 +43,8 @@ class Indicators
             'month' => $month,
             'time_period' => $timePeriod,
             'series_type' => $seriesType,
-            //TODO: Enable with correct API Token
-            //'datatype' => $dataType
+            // TODO: Enable with correct API Token
+            // 'datatype' => $dataType
         ], acceptJson: $acceptJson, acceptCsv: $acceptCsv);
     }
 

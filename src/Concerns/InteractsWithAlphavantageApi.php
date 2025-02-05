@@ -39,7 +39,7 @@ trait InteractsWithAlphavantageApi
             'apikey' => $this->apiKey,
         ])->withHeaders($headers)->timeout(60 * 3)->get($this->apiUrl);
 
-        //dd($response->effectiveUri());
+        // dd($response->effectiveUri());
         return $this->serializeResults($response, $acceptJson, $acceptCsv);
     }
 
