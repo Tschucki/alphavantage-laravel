@@ -27,6 +27,17 @@ class Fundamentals
      * @throws ApiVolumeReached
      * @throws ConnectionException
      */
+    public function etfProfile(string $symbol): array
+    {
+        return $this->get('ETF_PROFILE', [
+            'symbol' => $symbol,
+        ]);
+    }
+
+    /**
+     * @throws ApiVolumeReached
+     * @throws ConnectionException
+     */
     public function incomeState(string $symbol): array
     {
         return $this->get('INCOME_STATEMENT', [
