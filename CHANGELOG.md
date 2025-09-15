@@ -2,6 +2,17 @@
 
 All notable changes to `alphavantage-laravel` will be documented in this file.
 
+## 0.0.4 - 2025-09-15
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/Tschucki/alphavantage-laravel/pull/5
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/Tschucki/alphavantage-laravel/pull/7
+* Bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot[bot] in https://github.com/Tschucki/alphavantage-laravel/pull/6
+* Bump laravel version to 12 by @hackeresq in https://github.com/Tschucki/alphavantage-laravel/pull/9
+
+**Full Changelog**: https://github.com/Tschucki/alphavantage-laravel/compare/0.0.3...0.0.4
+
 ## 0.0.3 - 2025-02-05
 
 ### What's Changed
