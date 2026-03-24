@@ -2,6 +2,16 @@
 
 All notable changes to `alphavantage-laravel` will be documented in this file.
 
+## 0.0.5 - 2026-03-24
+
+### What's Changed
+
+* Bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/Tschucki/alphavantage-laravel/pull/10
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/Tschucki/alphavantage-laravel/pull/12
+* Add support for Laravel 13 by @hackeresq in https://github.com/Tschucki/alphavantage-laravel/pull/14
+
+**Full Changelog**: https://github.com/Tschucki/alphavantage-laravel/compare/0.0.4...0.0.5
+
 ## 0.0.4 - 2025-09-15
 
 ### What's Changed
